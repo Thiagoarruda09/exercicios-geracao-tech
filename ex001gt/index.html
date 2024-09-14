@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grouping tag</title>
+<style>
+    @font-face {
+        font-family:'tangerine' ;
+        src: url(fontes/Tangerine-Regular.ttf);
+    }
+
+    @font-face {
+        font-family:'normal' ;
+        src: url(fontes/coolvetica\ condensed\ rg.otf);
+    }
+    body
+    {background-color: dimgray;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+width: 700px;
+text-align: center;}
+
+    header
+    {background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;}
+
+    header > h1{font-family: 'tangerine';
+font-size: 60px;
+padding: 5px;
+border-radius: 10px 0px;
+background-image: linear-gradient(to right, rgb(165, 165, 165), transparent)
+}
+
+nav{font-family: 'normal';
+font-size: 20px;}
+
+    img{border-radius: 150px;}
+    
+    main 
+    {background-color: white;
+    padding: 10px;
+    margin: 10px;
+border-radius: 10px 0px;
+box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.499);
+font-family: 'normal';
+font-size: 20px;}
+    
+    nav
+    {
+      padding-left: 10px;
+      border-radius: 10px 0px; 
+      background-image: linear-gradient(to right, rgb(165, 165, 165), transparent)}
+    
+    nav > a
+    {text-decoration: none;
+    color:black;
+    font-weight: bold;
+    margin-right: 30px;}
+
+    nav > a:hover
+    {text-decoration: underline;}
+
+    article
+    {background-color:lightgray;
+    padding: 10px;}
+
+    article > aside
+    { padding-left: 10px;
+        border-radius: 10px 0px;
+        background-image: linear-gradient(to right, rgb(165, 165, 165), transparent)
+    }
+
+    footer
+    {background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;}
+
+    footer > p{margin: 0px;}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Thiago Arruda</h1>
+        <div><img src="imagens/WhatsApp Image 2024-08-05 at 10.08.17.jpeg" alt=""></div>
+        <nav>
+            <a href="https://www.instagram.com/thiagoarrud_/" target="_blank">instagram</a>
+            <a href="https://github.com/Thiagoarruda09" target="_blank">github</a>
+            <a href="https://www.linkedin.com/in/thiago-arruda-174937323/">linkedin</a>
+           
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Sobre Thiago Arruda</p>
+        </section>
+        <section>
+            <article>
+                <h2>Quem sou eu</h2>
+                <p>Me chamo Thiago Arruda e tenho 24 anos. Sou tecnico em logistica e atualmente estou me graduando em filosofia pela <strong>universidade federal do ceara</strong> ,apesar de ainda estar em formação, já exerço a função de docente em uma escola da rede privada. Tambem estou em processo de transição de carreira estudando programação e desenvolvimento web no curso geração tech, com a espectativa de me inserir no mercado de trabalho o quanto antes.</p>
+                <aside>escrito por <strong>Thiago Arruda</strong></aside>
+                </article>
+            <article>
+                <p>Geração tech</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>site desenvolvido por thiago arruda</p>
+    </footer>
+</body>
+</html>
