@@ -19,44 +19,54 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 width: 700px;
+position: center;
 text-align: center;}
 
     header
-    {background-color: white;
+    {background-image: url(imagens/lord-of-the-rings-wkdzi1bgb1i7mnb5.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
     padding: 10px;
     margin: 10px;
-    border-radius: 10px 0px;}
+    border-radius: 10px 0px;
+height: 300px;}
 
     header > h1{font-family: 'tangerine';
-font-size: 60px;
+padding-top: 0px;
+margin-top: 0px;
+    font-size: 60px;
 padding: 5px;
 border-radius: 10px 0px;
-background-image: linear-gradient(to right, rgb(165, 165, 165), transparent)
+
 }
 
-nav{font-family: 'normal';
-font-size: 20px;}
+nav{font-family: 'tangerine';
+font-size: 25px;
+margin-top: 280px;}
 
-    img{border-radius: 150px;}
+    img{border-radius: 150px;
+   }
     
     main 
-    {background-color: white;
+    {background-color:#0D0800;
     padding: 10px;
     margin: 10px;
-border-radius: 10px 0px;
+border-radius: 10px 10px 0px 0px;
 box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.499);
 font-family: 'normal';
-font-size: 20px;}
+font-size: 20px;
+margin: 0px;}
     
     nav
     {
       padding-left: 10px;
       border-radius: 10px 0px; 
-      background-image: linear-gradient(to right, rgb(165, 165, 165), transparent)}
+      background-image: linear-gradient(to right, #d9a711c9, transparent)}
     
     nav > a
     {text-decoration: none;
-    color:black;
+    color:#F2E530;
     font-weight: bold;
     margin-right: 30px;}
 
@@ -64,29 +74,40 @@ font-size: 20px;}
     {text-decoration: underline;}
 
     article
-    {background-color:lightgray;
-    padding: 10px;}
+    {background-color:#0D0800;
+    padding: 10px;
+color: #F2E530;}
 
     article > aside
     { padding-left: 10px;
         border-radius: 10px 0px;
-        background-image: linear-gradient(to right, rgb(165, 165, 165), transparent)
+        background-image: linear-gradient(to right, #d9a711c9, transparent)
     }
 
     footer
-    {background-color: black;
-    color: white;
+    {background-color: #0D0800;
+    color:#F2E530;
+    font-family: 'tangerine';
+    font-size: 25px;
     text-align: center;
     padding: 1px;
-    margin: 0px;}
+    margin: 0px;
+}
 
     footer > p{margin: 0px;}
+
+    div{padding-top: 20px;}
+    img{padding-bottom: 10px;}
+
+    .descrição{ border-radius: 10px 0px;
+        background-image: linear-gradient(to right,transparent, #d9a71193, transparent)
+    }
 </style>
 </head>
 <body>
     <header>
-        <h1>Thiago Arruda</h1>
-        <div><img src="imagens/WhatsApp Image 2024-08-05 at 10.08.17.jpeg" alt=""></div>
+    
+
         <nav>
             <a href="https://www.instagram.com/thiagoarrud_/" target="_blank">instagram</a>
             <a href="https://github.com/Thiagoarruda09" target="_blank">github</a>
@@ -96,12 +117,15 @@ font-size: 20px;}
     </header>
     <main>
         <section style="text-align: left;">
-            <p>Sobre Thiago Arruda</p>
+            <p style="font-family: 'tangerine';
+            font-size: 25px;
+            color: #F2E530;">Sobre Thiago Arruda</p>
         </section>
         <section>
             <article>
+                <div><img src="imagens/WhatsApp Image 2024-08-05 at 10.08.17.jpeg" alt=""></div>
                 <h2>Quem sou eu</h2>
-                <p>Me chamo Thiago Arruda e tenho 24 anos. Sou tecnico em logistica e atualmente estou me graduando em filosofia pela <strong>universidade federal do ceara</strong> ,apesar de ainda estar em formação, já exerço a função de docente em uma escola da rede privada. Tambem estou em processo de transição de carreira estudando programação e desenvolvimento web no curso geração tech, com a espectativa de me inserir no mercado de trabalho o quanto antes.</p>
+                <p class="descrição">Me chamo Thiago Arruda e tenho 24 anos. Sou tecnico em logistica e atualmente estou me graduando em filosofia pela <strong>universidade federal do ceara</strong> ,apesar de ainda estar em formação, já exerço a função de docente em uma escola da rede privada. Tambem estou em processo de transição de carreira estudando programação e desenvolvimento web no curso geração tech, com a espectativa de me inserir no mercado de trabalho o quanto antes.</p>
                 <aside>escrito por <strong>Thiago Arruda</strong></aside>
                 </article>
             <article>
