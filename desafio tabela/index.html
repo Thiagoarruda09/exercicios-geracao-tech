@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        th{border: solid 1px black;
+        border-collapse: collapse;}
+
+        .titulo{
+            background-color: rgba(211, 211, 211, 0.831);
+        }
+        .medalhas{width: 30px;
+        margin: 5px;}
+        table{width: 500px;}
+
+
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <colgroup>
+            <col>
+            <col>
+            <col style="background-color: gold;">
+            <col style="background-color: silver;">
+            <col style="background-color: chocolate;">
+        </colgroup>
+        <tr class="titulo">
+            <th colspan="2" rowspan="2">equipe</th>
+            <th colspan="3">medalhas</th>
+            <th rowspan="2">total</th>
+        </tr>
+        <tr class="titulo">
+            <th><img src="imagens/ouro.png" alt="" class="medalhas"></th>
+            <th><img src="imagens/prata.png" alt="" class="medalhas"></th>
+            <th><img src="imagens/bronze.png" alt="" class="medalhas"></th>
+        </tr>
+        <tr>
+            <th><img src="imagens/noruega.jpg" alt=""></th>
+            <th>noruega</th>
+            <th>16</th>
+            <th>8</th>
+            <th>13</th>
+            <th>37</th>
+        </tr>
+        <tr>
+            <th><img src="imagens/roc.jpg" alt=""></th>
+            <th>ROC</th>
+            <th>6</th>
+            <th>12</th>
+            <th>14</th>
+            <th>32</th>
+        </tr>
+        <tr>
+            <th><img src="imagens/alem.jpg" alt=""></th>
+            <th>alemanha</th>
+            <th>12</th>
+            <th>10</th>
+            <th>5</th>
+            <th>27</th>
+        </tr>
+        <tr>
+            <th><img src="imagens/canada.jpg" alt=""></th>
+            <th>canada</th>
+            <th>4</th>
+            <th>8</th>
+            <th>14</th>
+            <th>26</th>
+        </tr>
+        <tr>
+            <th><img src="imagens/EUA.jpg" alt=""></th>
+            <th>estados unidos</th>
+            <th>8</th>
+            <th>10</th>
+            <th>7</th>
+            <th>25</th>
+        </tr>
+    </table>
+</body>
+
+</html>
