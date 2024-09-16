@@ -1,45 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        th, td, tr{border: solid 1px black;}
+        th,
+        td,
+        tr {
+            border: solid 1px black;
+        }
 
-        table{width: 300px;}
+        table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        .medalhas {
+            width: 40px;
+        }
+
+        .numero {
+            text-align: center;
+        }
+
+        .primeira {
+            background-color: lightgray;
+        }
+
+        .pais {
+            padding-left: 5px;
+        }
+
+        .bandeira {
+            width: 70px;
+        }
     </style>
 </head>
+
 <body>
+
+
     <table>
-        <tr>
-            <th>nome</th>
-            <th>caracteristica</th>
-            <th>cidade</th>
+        <caption>tabela de medalhas dos jogos olimpicos</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col style="background-color: gold;">
+            <col style="background-color: silver;">
+            <col style="background-color: brown;">
+        </colgroup>
+        <tr class="primeira">
+            <th colspan="2">equipe</th>
+            <th><img src="imagens/ouro.png" alt="" class="medalhas"></th>
+            <th><img src="imagens/prata.png" alt="" class="medalhas"></th>
+            <th><img src="imagens/bronze.png" alt="" class="medalhas"></th>
+            <th>total</th>
         </tr>
         <tr>
-<td rowspan="2">maria</td>
-<td>idade: 26</td>
-<td rowspan="2">fortaleza</td>
+            <td><img src="imagens/noruega.jpg" alt="" class="bandeira"></td>
+            <td class="pais">noruega</td>
+            <td class="numero">16</td>
+            <td class="numero">8</td>
+            <td class="numero">13</td>
+            <td class="numero">37</td>
         </tr>
         <tr>
-<td>altura: 1,65</td>
-
-
+            <td><img src="imagens/roc.jpg" alt="" class="bandeira"></td>
+            <td class="pais">ROC</td>
+            <td class="numero">6</td>
+            <td class="numero">12</td>
+            <td class="numero">14</td>
+            <td class="numero">32</td>
         </tr>
         <tr>
-<td rowspan="2">joao</td>
-<td>idade: 28</td>
-<td rowspan="2">fortaleza</td>
+            <td><img src="imagens/alem.jpg" alt="" class="bandeira"></td>
+            <td class="pais">alemanha</td>
+            <td class="numero">12</td>
+            <td class="numero">10</td>
+            <td class="numero">5</td>
+            <td class="numero">27</td>
         </tr>
         <tr>
-            <td>altura: 1,80</td>
-
+            <td><img src="imagens/canada.jpg" alt="" class="bandeira"></td>
+            <td class="pais">canada</td>
+            <td class="numero">4</td>
+            <td class="numero">8</td>
+            <td class="numero">14</td>
+            <td class="numero">26</td>
+        </tr>
+        <tr>
+            <td><img src="imagens/EUA.jpg" alt="" class="bandeira"></td>
+            <td class="pais">estados unidos</td>
+            <td class="numero">8</td>
+            <td class="numero">10</td>
+            <td class="numero">7</td>
+            <td class="numero">25</td>
         </tr>
     </table>
 
-<table>
-    
-</table>
+    <form action="">
+        <label for="nome">nome</label>
+        <input type="text" name="nome" id="nome" required>
+        <br><br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="senha">senha</label>
+        <input type="password" name="senha" id="senha" required>
+        <br><br>
+        <label for="idade">idade</label>
+        <input type="number" name="idade" id="idade" required>
+        <br><br>
+
+        <label for="genero">genero</label> <br>
+
+        <label for="genero">masculino</label>
+        <input type="radio" name="genero" id="genero" value="masculino">
+        <label for="genero">feminino</label>
+        <input type="radio" name="genero" id="genero" value="feminino">
+        <label for="genero">outro(a)</label>
+        <input type="radio" name="genero" id="genero" value="outro(a)">
+        <br><br>
+        <label for="linguagem">selecione suas linguagem de programação</label>
+        <br><br>
+        <label for="js">javascript</label>
+        <input type="checkbox" name="linguagens" id="js" value="javascript">
+        <br><br>
+        <label for="python">python</label>
+        <input type="checkbox" name="linguagens" id="python" value="python">
+        <br><br>
+
+        <label for="texto">digite seu comentario</label> <br>
+        <textarea name="texto" style="resize: none;" id="texto" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="cidade">cidade pretendida</label>
+        <select name="cidade" id="cidades">
+            <option value="">selecione uma cidade</option>
+            <option value="fortaleza">fortaleza</option>
+            <option value="joao pessoa">joao pessoa</option>
+            <option value="caucaia">caucaia</option>
+        </select>
+        <div>
+            <input type="submit" value="enviar">
+        </div>
+    </form>
 </body>
+
 </html>
