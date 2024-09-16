@@ -12,14 +12,21 @@
             text-align: left;
 }
 
+header{height: 200px;}
+
+header > h1{font-size: 50px;}
+
         header {
             background-image: linear-gradient(to right, #D97A07,transparent );
             color: black;
             text-align: center;
         border-radius: 10px 10px 0px 0px;
     border: 2px solid black;
-height: 300px;}
+}
+nav > a{padding: 5px;
+margin: 5px;}
 
+nav{padding-top: 120px;}
         header>h1 {
             margin: 0px;
         }
@@ -91,6 +98,12 @@ margin: 12px;
 padding: 10px;
 border-radius: 20px 0px 0px 0px;
 width: 500px;}
+
+table{border-collapse: collapse;
+}
+
+th, td, tr{border: solid 1px black;}
+
     </style>
 </head>
 
@@ -158,6 +171,29 @@ width: 500px;}
 
 
         </article>
+        <table>
+            <tr>
+                <th>nome</th>
+                <th>caracteristica</th>
+                <th>cidade</th>
+            </tr>
+            <tr>
+                <td rowspan="2">maria</td>
+                <td>idade:26</td>
+                <td>altura: 1,65</td>
+                <td rowspan="2">fortaleza</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>26</td>
+                <td>fortaleza</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>26</td>
+                <td>fortaleza</td>
+            </tr>
+        </table>
     </main>
     <footer> Receita da Kátia para<strong> Geração Tech</strong> criando por <a href="index.html" target="_blank">Thiago
             Arruda</a></footer>
