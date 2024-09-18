@@ -42,7 +42,8 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 margin-top: 100px;
-background-color: #fe552296;}
+
+}
 
 .conteiner{display:flex;
     flex-direction: column;
@@ -118,6 +119,7 @@ transition: 2s;}
     background-size: cover;
     background-position: center;
     color: transparent;
+    
 }
 
 
@@ -126,6 +128,7 @@ transition: 2s;}
     background-size: cover;
     background-position: center;
     color: transparent;
+    
 }
 
 
@@ -134,6 +137,7 @@ transition: 2s;}
     background-size: cover;
     background-position: center;
     color: transparent;
+    
 }
 
 
@@ -144,6 +148,7 @@ transition: 2s;}
     background-size: cover;
     background-position: center;
     color: transparent;
+    
 }
 
 
