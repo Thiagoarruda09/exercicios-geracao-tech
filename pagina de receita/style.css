@@ -1,13 +1,17 @@
+@font-face {
+    font-family: 'normal';
+    src: url(fontes/coolvetica\ rg.otf);
+}
 *{margin: 0px;
 padding: 0px;
-font-family: Arial, Helvetica, sans-serif;}
+font-family: 'normal'}
 body{background-color: #F3F4F6;
 text-align: center;}
 
-header{background-color:#FE5722;
+header{background-color:  #FE5722;
 text-align: center;
 color: white;
-height: 200px;
+height: 210px;
 }
 
 
@@ -22,15 +26,34 @@ header > p{padding-top: 20px;}
 nav > a{color: white;
 margin: 5px;}
 
+a{margin: 2px;
+padding: 2px;
+text-decoration: none;}
+
+a:hover{background-color: white;
+color: #FE5722;
+margin: 2px;
+padding: 2px;
+border-radius: 5px;}
+
 .introdução{display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: center;}
+justify-content: center;
+margin-top: 100px;
+background-color: #fe552296;}
 
-.teste{display: inline-flex;
+.conteiner{display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: ;}
+    align-items:center}
+
+.passos{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+background-color: #fe55229b;
+border-radius: 10px;}
 
 
 
@@ -45,7 +68,9 @@ border-radius: 10px;
 width: 400px;
 margin: 20px;
 padding: 20px;
-padding-left: 30px;}
+padding-left: 30px;
+box-shadow: 3px 3px 3px #fe55228a;
+}
 
 img{width: 20vw;
 border-radius: 5px;}
@@ -54,3 +79,56 @@ footer{background-color: black;
 color: white;
 text-align: center;}
 
+h3,h2{color: #FE5722;}
+
+
+
+.feijoada:hover{background-image: url(1061153462-feijoada-de-ogum.webp);
+background-size: cover;
+background-position: center;
+color: transparent;
+height: 130px;}
+
+.macarrão:hover{background-image: url(macarrao-1.jpg);
+background-size: cover;
+background-position: center;
+color: transparent;
+height: 130px;}
+
+.bolo:hover{background-image: url(8eff8005-bolo-de-cenoura-fofinho.jpg);
+background-size: cover;
+background-position: center;
+color: transparent;
+height: 130px;}
+
+.palmirinha:hover{background-image: url(Palmirinha.jpg);
+background-size: cover;
+background-position: top center;
+color: transparent;
+height: 150px;}
+
+
+
+.nutricional{
+    background-image: url(nutricionista-alimentacao-1647291298693_v2_450x450.jpg);
+    background-size: cover;
+    width: 520px;
+    opacity: 90%;
+}
+
+table{background-color: rgba(255, 255, 255, 0.614);
+border-radius: 10px;
+margin: 15px;
+padding: 15px;
+width: 500px;
+box-shadow: 3px 3px 3px black;}
+
+th, td{border: 1px solid #FE5722}
+
+.bolosimples{border: 2px solid #FE5722;}
+
+span{background-color: #fe5522b7;
+color: white;
+border-radius: 3px;}
+
+li::marker{color: #FE5722;}
