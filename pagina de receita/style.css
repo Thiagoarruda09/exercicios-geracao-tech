@@ -48,12 +48,16 @@ margin-top: 100px;
 .conteiner{display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:center}
+    align-items:center;
+justify-content: center;
+align-content: center;}
 
 .passos{display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 background-color: #fe55229b;
 border-radius: 10px;}
 
