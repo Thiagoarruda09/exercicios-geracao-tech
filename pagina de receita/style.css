@@ -11,11 +11,12 @@ text-align: center;}
 header{background-color:  #FE5722;
 text-align: center;
 color: white;
-height: 210px;
+height: 180px;
+position: sticky;
 }
 
 
-nav{padding-top: 60px;
+nav{padding-top: 30px;
 color: white;
 padding-bottom: 5px;}
 
@@ -55,6 +56,11 @@ background-color: #fe552296;}
 background-color: #fe55229b;
 border-radius: 10px;}
 
+div{background-image: url(bolo-cremoso-de-fuba-2806.webp);
+background-size: cover;
+background-attachment: fixed;
+background-position: left center;}
+
 
 
 
@@ -75,7 +81,7 @@ box-shadow: 3px 3px 3px #fe55228a;
 img{width: 20vw;
 border-radius: 5px;}
 
-footer{background-color: black;
+footer{background-color: #FE5722;
 color: white;
 text-align: center;}
 
@@ -83,29 +89,64 @@ h3,h2{color: #FE5722;}
 
 
 
-.feijoada:hover{background-image: url(1061153462-feijoada-de-ogum.webp);
-background-size: cover;
-background-position: center;
-color: transparent;
-height: 130px;}
+.feijoada:hover{background-color: white; 
+color: black;
+height: 130px;
+background-image: none;
+transition: 2s;}
 
-.macarrão:hover{background-image: url(macarrao-1.jpg);
-background-size: cover;
-background-position: center;
-color: transparent;
-height: 130px;}
+.macarrão:hover{background-color: white;
+color: black;
+height: 130px;
+background-image: none;
+transition: 2s;}
 
-.bolo:hover{background-image: url(8eff8005-bolo-de-cenoura-fofinho.jpg);
-background-size: cover;
-background-position: center;
-color: transparent;
-height: 130px;}
+.bolo:hover{background-color: white;
+color: black;
+height: 130px;
+background-image: none;
+transition: 2s;}
 
-.palmirinha:hover{background-image: url(Palmirinha.jpg);
-background-size: cover;
-background-position: top center;
-color: transparent;
-height: 150px;}
+.palmirinha:hover{background-color: white;
+color: black;
+background-image: none;
+height: 150px;
+transition: 2s;}
+
+.feijoada{
+    background-image: url(1061153462-feijoada-de-ogum.webp);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+}
+
+
+.macarrão{
+    background-image: url(macarrao-1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+}
+
+
+.bolo{
+    background-image: url(8eff8005-bolo-de-cenoura-fofinho.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+}
+
+
+.palmirinha{
+    background-image: url(Palmirinha.jpg
+    );
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+}
+
+
 
 
 
@@ -121,7 +162,7 @@ border-radius: 10px;
 margin: 15px;
 padding: 15px;
 width: 500px;
-box-shadow: 3px 3px 3px black;}
+box-shadow: 3px 3px 3px #fe55227b;}
 
 th, td{border: 1px solid #FE5722}
 
@@ -132,3 +173,25 @@ color: white;
 border-radius: 3px;}
 
 li::marker{color: #FE5722;}
+
+hr{color: #FE5722;
+}
+
+#bolin{margin-top: 10px;
+    background-image: linear-gradient(to right, transparent, #FE5722, transparent);
+color: white;
+padding: 5px;}
+
+#nutricional{background-image: linear-gradient(to right, transparent, #FE5722, transparent);
+color:white;
+margin-top: 10px;
+width: 1000px;
+padding: 5px;
+border-radius: 10px;
+}
+
+
+
+th{background-color: #FE5722;
+color: #F3F4F6;}
+
