@@ -1,0 +1,104 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+
+header{background-image: url(imagens/SmartSelect_20240919_110351_Samsung\ Notes.jpg);
+background-size: cover;
+    color: white;
+text-align: center;
+height: 400px;}
+
+.formulario{display: flex;
+flex-direction: column;
+align-items: center;
+align-content: end;}
+
+header > nav{text-align: right;}
+
+a{color: orangered;}
+
+.linkbotao{background-color: orangered;
+color: white;
+border-radius: 10px;
+padding: 5px;
+text-decoration: none;}
+
+.sign{color: white;
+padding: 5px;
+text-decoration: none;
+padding-top: 5px;}
+
+.sign:hover{background-color: white;
+color: darkred;
+border-radius: 10px;}
+
+.formulario > h1{font-size: 40px;}
+
+.formulario > input{
+    border-radius: 20px;
+    height: 30px;
+    width: 400px;
+}
+
+.fundo01{display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 30px;
+padding-top: 30px;}
+
+.fundo02{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+margin-top: 30px;
+padding-top: 30px;}
+
+.fundo02 > article{width: 300px;}
+
+.fundo03{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+margin-top: 30px;
+padding-top: 30px;
+background-color: rgba(222, 184, 135, 0.664);
+margin: 0px;}
+
+.fundo03 > article{width: 300px;}
+
+.entrega{
+    text-align: center;
+    font-size: 15px;
+    width:200px ;
+
+}
+
+.loja{
+    text-align: center;
+    font-size: 15px;
+    width:200px ;
+
+}
+
+.celular{
+    text-align: center;
+    font-size: 15px;
+    width:200px ;
+
+}
+.img01{width: 20vh;}
+
+.img02{width: 70vh;}
+
+.img03{width: 70vh;}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    
+
+}
+li{color: white;
+list-style: none;}
+
+footer{background-color: black;}
+h4{color: white;}
+

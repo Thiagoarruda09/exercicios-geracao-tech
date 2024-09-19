@@ -2,205 +2,266 @@
     font-family: 'normal';
     src: url(fontes/coolvetica\ rg.otf);
 }
-*{margin: 0px;
-padding: 0px;
-font-family: 'normal'}
-body{background-color: #F3F4F6;
-text-align: center;}
 
-header{background-color:  #FE5722;
-text-align: center;
-color: white;
-height: 180px;
-position: sticky;
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'normal';
+}
+
+body {
+    background-color: #F3F4F6;
+    text-align: center;
+}
+
+header {
+    background-color: #FE5722;
+    text-align: center;
+    color: white;
+    height: 180px;
+    position: sticky;
 }
 
 
-nav{padding-top: 30px;
-color: white;
-padding-bottom: 5px;}
+nav {
+    padding-top: 30px;
+    color: white;
+    padding-bottom: 5px;
+}
 
-header > h1{padding-top: 50px;}
+header>h1 {
+    padding-top: 50px;
+}
 
-header > p{padding-top: 20px;}
+header>p {
+    padding-top: 20px;
+}
 
-nav > a{color: white;
-margin: 5px;}
+nav>a {
+    color: white;
+    margin: 5px;
+}
 
-a{margin: 2px;
-padding: 2px;
-text-decoration: none;}
+a {
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none;
+}
 
-a:hover{background-color: white;
-color: #FE5722;
-margin: 2px;
-padding: 2px;
-border-radius: 5px;}
+a:hover {
+    background-color: white;
+    color: #FE5722;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
 
-.introdução{display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 100px;
+.introdução {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
 
 }
 
-.conteiner{display:flex;
+.conteiner {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items:center;
-justify-content: center;
-align-content: center;}
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
 
-.passos{display: flex;
+.passos {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-background-color: #fe55229b;
-border-radius: 10px;}
-
-div{background-image: url(bolo-cremoso-de-fuba-2806.webp);
-background-size: cover;
-background-attachment: fixed;
-background-position: left center;}
-
-
-
-
-
-
-
-
-article{background-color: white;
-text-align: justify;
-border-radius: 10px;
-width: 400px;
-margin: 20px;
-padding: 20px;
-padding-left: 30px;
-box-shadow: 3px 3px 3px #fe55228a;
+    background-color: #fe55229b;
+    border-radius: 10px;
 }
 
-img{width: 20vw;
-border-radius: 5px;}
-
-footer{background-color: #FE5722;
-color: white;
-text-align: center;}
-
-h3,h2{color: #FE5722;}
+div {
+    background-image: url(bolo-cremoso-de-fuba-2806.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left center;
+}
 
 
 
-.feijoada:hover{background-color: white; 
-color: black;
-height: 130px;
-background-image: none;
-transition: 2s;}
 
-.macarrão:hover{background-color: white;
-color: black;
-height: 130px;
-background-image: none;
-transition: 2s;}
 
-.bolo:hover{background-color: white;
-color: black;
-height: 130px;
-background-image: none;
-transition: 2s;}
 
-.palmirinha:hover{background-color: white;
-color: black;
-background-image: none;
-height: 150px;
-transition: 2s;}
 
-.feijoada{
+
+article {
+    background-color: white;
+    text-align: justify;
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    padding-left: 30px;
+    box-shadow: 3px 3px 3px #fe55228a;
+}
+
+img {
+    width: 20vw;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #FE5722;
+    color: white;
+    text-align: center;
+}
+
+h3,
+h2 {
+    color: #FE5722;
+}
+
+
+
+.feijoada:hover {
+    background-color: white;
+    color: black;
+    height: 130px;
+    background-image: none;
+    transition: 2s;
+}
+
+.macarrão:hover {
+    background-color: white;
+    color: black;
+    height: 130px;
+    background-image: none;
+    transition: 2s;
+}
+
+.bolo:hover {
+    background-color: white;
+    color: black;
+    height: 130px;
+    background-image: none;
+    transition: 2s;
+}
+
+.palmirinha:hover {
+    background-color: white;
+    color: black;
+    background-image: none;
+    height: 150px;
+    transition: 2s;
+}
+
+.feijoada {
     background-image: url(1061153462-feijoada-de-ogum.webp);
     background-size: cover;
     background-position: center;
     color: transparent;
-    
+
 }
 
 
-.macarrão{
+.macarrão {
     background-image: url(macarrao-1.jpg);
     background-size: cover;
     background-position: center;
     color: transparent;
-    
+
 }
 
 
-.bolo{
+.bolo {
     background-image: url(8eff8005-bolo-de-cenoura-fofinho.jpg);
     background-size: cover;
     background-position: center;
     color: transparent;
-    
+
 }
 
 
-.palmirinha{
+.palmirinha {
     background-image: url(Palmirinha.jpg
-    );
+);
     height: 150px;
     background-size: cover;
     background-position: center;
     color: transparent;
-    
+
 }
 
 
 
 
 
-.nutricional{
+.nutricional {
     background-image: url(nutricionista-alimentacao-1647291298693_v2_450x450.jpg);
     background-size: cover;
     width: 520px;
     opacity: 90%;
 }
 
-table{background-color: rgba(255, 255, 255, 0.614);
-border-radius: 10px;
-margin: 15px;
-padding: 15px;
-width: 500px;
-box-shadow: 3px 3px 3px #fe55227b;}
-
-th, td{border: 1px solid #FE5722}
-
-.bolosimples{border: 2px solid #FE5722;}
-
-span{background-color: #fe5522b7;
-color: white;
-border-radius: 3px;}
-
-li::marker{color: #FE5722;}
-
-hr{color: #FE5722;
+table {
+    background-color: rgba(255, 255, 255, 0.614);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 3px 3px 3px #fe55227b;
 }
 
-#bolin{margin-top: 10px;
+th,
+td {
+    border: 1px solid #FE5722
+}
+
+.bolosimples {
+    border: 2px solid #FE5722;
+}
+
+span {
+    background-color: #fe5522b7;
+    color: white;
+    border-radius: 3px;
+}
+
+li::marker {
+    color: #FE5722;
+}
+
+hr {
+    color: #FE5722;
+}
+
+#bolin {
+    margin-top: 10px;
     background-image: linear-gradient(to right, transparent, #FE5722, transparent);
-color: white;
-padding: 5px;}
+    color: white;
+    padding: 5px;
+}
 
-#nutricional{background-image: linear-gradient(to right, transparent, #FE5722, transparent);
-color:white;
-margin-top: 10px;
-width: 1000px;
-padding: 5px;
-border-radius: 10px;
+#nutricional {
+    background-image: linear-gradient(to right, transparent, #FE5722, transparent);
+    color: white;
+    margin-top: 10px;
+    width: 1000px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 
 
-th{background-color: #FE5722;
-color: #F3F4F6;}
-
+th {
+    background-color: #FE5722;
+    color: #F3F4F6;
+}
