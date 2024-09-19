@@ -114,6 +114,7 @@ margin: 0px;}
     flex-wrap: nowrap;
     text-align: justify;
     font-size: 10px;
+    background-color: black;
 
     
 
@@ -129,4 +130,15 @@ list-style: none;}
 
 footer{background-color: black;}
 h4{color: white;}
+
+.footernav > a{color: white;
+font-size: 10px;
+margin: 5px;
+text-align: center;}
+
+.footernav{display: flex;
+align-content: center;
+align-items: center;
+
+margin-left: 400px;}
 
