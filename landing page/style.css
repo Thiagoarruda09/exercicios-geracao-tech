@@ -1,10 +1,23 @@
-*{font-family: Arial, Helvetica, sans-serif;}
+@font-face {
+    font-family:'normal' ;
+    src: url(fonte/coolvetica\ rg.otf);
+}
+*{font-family: 'normal'}
+
+body{margin: 0px;
+padding: 0px;}
 
 header{background-image: url(imagens/SmartSelect_20240919_110351_Samsung\ Notes.jpg);
 background-size: cover;
     color: white;
 text-align: center;
-height: 400px;}
+height: 400px;
+margin: 0px;
+padding: 0px;
+}
+
+.footerlist1{display: flex; 
+flex-direction: row;}
 
 .formulario{display: flex;
 flex-direction: column;
@@ -13,7 +26,10 @@ align-content: end;}
 
 header > nav{text-align: right;}
 
-a{color: orangered;}
+a{color: orangered;
+text-decoration: none;}
+
+a:hover{text-decoration: underline;}
 
 .linkbotao{background-color: orangered;
 color: white;
@@ -36,6 +52,7 @@ border-radius: 10px;}
     border-radius: 20px;
     height: 30px;
     width: 400px;
+    border-color: transparent;
 }
 
 .fundo01{display: flex;
@@ -51,6 +68,7 @@ margin-top: 30px;
 padding-top: 30px;}
 
 .fundo02 > article{width: 300px;}
+
 
 .fundo03{display: flex;
     flex-direction: row;
@@ -82,6 +100,7 @@ margin: 0px;}
     width:200px ;
 
 }
+.logo{width: 30vh;}
 .img01{width: 20vh;}
 
 .img02{width: 70vh;}
@@ -90,11 +109,20 @@ margin: 0px;}
 
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: nowrap;
+    text-align: justify;
+    font-size: 10px;
 
     
 
+}
+
+.footerlist2{display: flex;
+    text-align: left;
+flex-direction: row;
+padding-right: 175px;
 }
 li{color: white;
 list-style: none;}
