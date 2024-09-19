@@ -6,9 +6,9 @@
 
 /* Aqui você irá adicionar as media queries para tornar a página responsiva complete as lacunas*/
 /* Para telas menores que 768px */
-@media (_____________) {
+@media (max-width:768px) {
     body {
-        background-color: ____________; 
+        background-color: white; 
     }
 
     main {
@@ -16,14 +16,22 @@
     }
 
     header {
-        background-color:_________________; 
+        background-color:green;
         color: white;
         padding: 20px;
         text-align: center;
     }
 
+
+    nav > a{
+        margin: 15px;
+        padding: 10px;
+
+    }
     nav {
-        display: inline-block; /* Altera o display para inline-block para permitir alinhamento horizontal */
+        display: inline-flex;
+    
+        text-align: center; /* Altera o display para inline-block para permitir alinhamento horizontal */
     }
 
     ul {
@@ -32,9 +40,10 @@
     }
 
     li {
-        display: ___________________; /* Exibe os itens da lista na mesma linha */
+        display:flex; /* Exibe os itens da lista na mesma linha */
         margin-right: 20px; /* Adiciona margem à direita entre os itens */
-        font-size: _________________;
+        font-size: 20px;
+
     }
 
     a:link {
@@ -43,7 +52,7 @@
     }
 
     img {
-        display: ___________;
+        display: none;
     }
 
     div{
@@ -52,7 +61,7 @@
 
     footer {
         
-        background-color:____________;
+        background-color:green;
         color: white;
         ________________: 20px;/*espaçamento interno*/
         ________________: center;/*alinhamento de texto*/
@@ -60,7 +69,7 @@
 }
 
 /* Para telas com tamanho mínimo de 768px ou maiores (desktop) */
-@media (____________________________) {
+@media (min-width:768px) {
     body {
         background-color: white;
     }
@@ -74,6 +83,10 @@
         padding: 20px;
         color: aliceblue;
         text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    }
+    nav > a{
+        margin: 20px;
+        padding: 10px;
     }
 
     nav {
@@ -97,7 +110,7 @@
 
     img {
         display: inline; /* Exibe as imagens normalmente */
-        ___________: _________/* Define a largura das imagens 500 em px*/
+        width: 500px;/* Define a largura das imagens 500 em px*/
     }
 
     div {
