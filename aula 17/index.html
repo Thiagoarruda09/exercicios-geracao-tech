@@ -79,7 +79,7 @@
          } while (numero<=0);*/
 
         /* Crie um programa que, utilizando um laço do...while, peça ao usuário para inserir números até que a soma deles seja maior que 100. Ao final, exiba a soma.*/
-        let soma = 0
+        /*let soma = 0
         do {
             numero = parseInt(prompt("digite um numuro"))
             soma += numero
@@ -89,8 +89,110 @@
                 break
 
             }
-        } while (soma <= 100);
+        } while (soma <= 100);*/
 
+        /*Crie um programa que, utilizando um laço for, percorra os números de 1 a 100 e exiba apenas os números pares.*/
+
+        /*for(i=0; i<=100;i++){
+            
+            if(i%2==0){
+                console.log(i)
+            }
+        }*/
+        /* Crie um programa que, utilizando um laço for, peça ao usuário para digitar 5 números e, para cada um, exiba a mensagem dizendo se ele é par ou não*/
+        /*for(i=1; i<=5;i++){
+        numeroDigitado=parseInt(prompt("digite um numero"))
+        if(numeroDigitado%2==0){
+            alert("é par")
+        }
+        if(numeroDigitado%2 !=0){
+            alert("er impar")
+        }
+    }
+*/
+        /* Crie um programa que, utilizando um laço while, peça ao usuário para inserir números até que o total de 5 números pares tenha sido coletado, e exiba esses números.*/
+        /*let cont=0
+        let numero = 1
+        while (cont <5) {
+            numero = parseInt(prompt("digite um numero"))
+            if (numero % 2 == 0) {
+                cont++
+                console.log(numero)
+            }
+        }   */
+        /*Crie um programa que, utilizando um laço while, peça ao usuário para inserir uma senha correta (definida previamente) e só permita o encerramento quando o usuário acertar a senha.*/
+        /*let senha = "lobinho"
+        let senhaDigitada=0
+        
+        while(senhaDigitada!=senha){
+            senhaDigitada=prompt("digite sua senha")
+            
+          if(senhaDigitada==senha){
+            alert("senha correta RECEBA AUUUUUUUUUUUUUUUU")
+          }
+        }*/
+        /* Crie um programa que, utilizando um laço while, peça ao usuário para digitar 10 números e exiba quantos desses números são primos.*/
+
+        /*let numero = 0
+        let i = 1
+        let primos=0
+        while (i <= 10) {
+
+            numero = parseInt(prompt("digite um numero"))
+
+            let a = 1
+            let cont = 0
+            while (a <= numero) {
+                if (numero % a == 0) {
+                    cont++
+                }
+                a++
+            }
+            if (cont == 2) {
+                primos++
+               
+            }
+
+            i++
+
+        }
+        alert("vc digitou" +primos + "numeros primos")*/
+        /* Crie um programa que, utilizando um laço do...while, peça ao usuário para inserir números e calcule a média desses números. O programa deve parar quando o usuário inserir 0.*/
+        /*let numeroDigitado = 0
+        let media = 0
+        let cont = 0
+        let soma = 0
+        do {
+            numeroDigitado = parseFloat(prompt("digite a nota"))
+            soma += numeroDigitado
+            cont++
+            if(numeroDigitado==0){
+                media=soma/(cont-1)
+
+            }
+        } while (numeroDigitado != 0);
+        alert("a média é" + media)*/
+        /* Crie um programa que, utilizando um laço do...while, peça ao usuário para inserir números até que ele insira 5 números ímpares consecutivos. Ao final, exiba esses números.*/
+        /*let numeroDigitado = 0
+        let cont = 0
+     
+        do {
+            numeroDigitado = parseInt(prompt("digite um numero"))
+            if (numeroDigitado % 2 == 1) {
+                cont++
+               
+            }
+            else(cont=0)
+
+        } while (cont !=5);
+        alert("você digitou 5 numeros impares consecutivamente")*/
+
+        //array
+        let frutas = [];
+        for(let i=0;i<5;i++){
+            frutas[i]=prompt("digite uma fruta")
+        }
+        alert(frutas)
     </script>
 </head>
 
