@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*3. Leia 10 números. Se o número for par, adicione o número em um array e pares. Se o 
+número for ímpar adicione-o em um array de ímpares*/
+        let pares = []
+        let impares = []
+        for (let i = 0; i < 10; i++) {
+            numero = parseInt(prompt("digite um numero"))
+            if (numero % 2 == 0) {
+                pares.push(numero)
+            }
+            if (numero % 2 != 0) {
+                impares.push(numero)
+            }
+        } alert(impares)
+        alert(pares)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*7. Você é responsável pelo controle de estoque de um supermercado e precisa verificar 
+rapidamente se determinado produto está em falta. A lista de produtos em estoque está 
+armazenada em um array. Utilizando o método includes(), crie um script que verifique se 
+um produto específico está presente no array. Se o produto estiver disponível, imprima 
+uma mensagem informando que o produto está em estoque. Caso contrário, informe que 
+o produto está em falta.
+Em estoque: "arroz", "feijão", "macarrão", "açúcar", "café"*/
+
+let estoque=['arroz','feijão', 'macarrão', 'açucar','café']
+produtoDesejado=prompt('que produto vc quer?')
+
+if(estoque.includes(produtoDesejado)){
+    alert('está disponivel')
+}
+else{alert("não está disponivel")}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
