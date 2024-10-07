@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*3. Faça um procedimento que recebe 3 valores inteiros por parâmetro e retorna-os 
+ordenados em ordem crescente.*/
+        function ordenarNumeros(a, b, c) {
+            let variaveis = []
+            if (a > b && a > c) {
+                variaveis[2] = a
+                if (b > c) {
+                    variaveis[1] = b
+                    variaveis[0] = c
+                }
+                else {
+                    variaveis[1] = c
+                    variaveis[0] = b
+                }
+
+            }
+            if (b > c && b > a) {
+                variaveis[2] = b
+                if (c > a) {
+                    variaveis[1] = c
+                    variaveis[0] = a
+                }
+                else {
+                    variaveis[1] = a
+                    variaveis[0] = c
+                }
+            }
+            if (c > a && c > b) {
+                variaveis[2] = c
+                if (a > b) {
+                    variaveis[1] = a
+                    variaveis[0] = b
+                }
+                else {
+                    variaveis[1] = b
+                    variaveis[0] = a
+                }
+            }
+            return variaveis
+
+        }
+        let a =parseInt(prompt("digite um numero"))
+        let b =parseInt(prompt("digite um numero"))
+        let c =parseInt(prompt("digite um numero"))
+        alert(ordenarNumeros(a,b,c))
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

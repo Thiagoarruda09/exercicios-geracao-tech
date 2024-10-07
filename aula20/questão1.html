@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*1. Faça um procedimento que recebe a idade de um nadador por parâmetro e retorna,
+também por parâmetro, a categoria desse nadador de acordo com a tabela abaixo: 
+*Idade* *Categoria* 
+5 a 7 anos Infantil A 
+8 a 10 anos Infantil B 
+11-13 anos Juvenil A 
+14-17 anos Juvenil B 
+Maiores de Adulto 
+18 anos (inclusive)*/
+
+function classificar (idade){
+    if (idade >=5 && idade <=7){
+        return "infantil A" 
+    }
+    if(idade>=8 && idade <=10){
+        return "infantil B" 
+    }
+    if(idade>=11&&idade<=13){
+        return "juvenil A" 
+    }
+    if(idade>=14 &&idade<=17){
+        return "juvenil B" 
+    }
+    if(idade>=18){
+        return "adulto" 
+    }
+}
+
+
+let idade=parseInt(prompt("digite sua idade"))
+alert(classificar(idade))
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
