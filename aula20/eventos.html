@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="script" href="funcoes.js" />
+    <script src="funcoes.js"></script>
+    <script>
+      function clicouAzul() {
+        alert("Você clicou no Azul");
+      }
+      function clicouVerde() {
+        alert("Você deu duplo click no verde");
+      }
+      function clicouAmarelo() {
+        alert("mouse no amarelo");
+      }
+      function mouseSaiu() {
+        alert("O mouse saiu");
+      }
+
+      function funcao1() {
+        alert("Você pressionou uma tecla");
+      }
+
+      function funcao2() {
+        alert("tecla pressionada");
+      }
+      function funcao3() {
+        alert("tecla pressionada subiu");
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      onclick="clicouAzul()"
+      style="background-color: blue; width: 150px; height: 150px"
+    ></div>
+    <div
+      ondblclick="clicouVerde()"
+      style="background-color: green; width: 150px; height: 150px"
+    ></div>
+    <div
+      onmouseover="clicouAmarelo()"
+      style="background-color: yellow; width: 150px; height: 150px"
+    ></div>
+
+    <div
+      onmouseout="mouseSaiu()"
+      style="background-color: black; width: 150px; height: 150px"
+    ></div>
+
+    <h1>Eventos de teclado</h1>
+
+    <input onkeydown="funcao1()" type="text" />
+    <input onkeypress="funcao2()" type="text" />
+    <input onkeyup="funcao3()" type="text" />
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
