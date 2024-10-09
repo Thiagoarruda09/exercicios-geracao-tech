@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- <h1>Seleção de elementos </h1>
+    <h3>document.getElementById("Id do elemento")</h3>
+
+    <div id="div1" class="divs">
+
+        <p id="paragrafo1" class="paragrafoInicial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptates atque totam enim facere, exercitationem at deserunt obcaecati magni est! Corporis commodi quas cupiditate modi illum in omnis incidunt dignissimos.</p>
+
+        <p id="paragrafo2" class="paragrafoInicial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptates atque totam enim facere, exercitationem at deserunt obcaecati magni est! Corporis commodi quas cupiditate modi illum in omnis incidunt dignissimos.</p>
+
+        <p id="paragrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptates atque totam enim facere, exercitationem at deserunt obcaecati magni est! Corporis commodi quas cupiditate modi illum in omnis incidunt dignissimos.</p>
+        <h1>titulo 2 </h1>
+    </div>
+    
+    <h1>titulo 3 </h1>
+    <h1>titulo 4 </h1>
+
+    <input id="nome" type="text" name="nome" placeholder="Digite seu nome">
+    <input type="submit" name="" id="" onclick="capturaNome()">
+    <br>
+    <input id="senha" type="password" name="nome" placeholder="Digite sua senha">
+    <br>
+    <input id="email" type="email" name="nome" placeholder="Digite seu email">
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+   
+     -->
+     <input id="nome1" name="nome1" type="text">opção 1
+     <input id="nome2" name="nome2" type="text">opção 2
+    <input type="submit" onclick="trocarValor()">
+</body>
+
+<script>
+    function trocarValor(){
+        let nome1 = document.getElementById("nome1")
+        let nome2 = document.getElementById("nome2")
+        let aux=''
+   aux=nome1.value
+   nome1.value=nome2.value
+   nome2.value=aux
+     
+        
+    }
+    // Selecionando elementos pelas tags
+    // let titulos = document.getElementsByTagName('h1')
+    // console.log(titulos)
+
+    // let paragrafos = document.getElementsByTagName('p')
+    // console.log(paragrafos)
+
+    // let divs = document.getElementsByTagName('div')
+    // console.log(divs)
+
+    // Selecionando elementos pelas classes
+
+    // let paragrafosIniciais = document.getElementsByClassName('paragrafoInicial')
+    // console.log(paragrafosIniciais)
+
+    // Selecionando elementos pelo nome
+
+    // let inputsNome = document.getElementsByName('nome')
+    // console.log(inputsNome)
+
+    //Selecionando elementos pelo ID
+
+    // let divParagrafos = document.getElementById('div1')
+    // console.log(divParagrafos)
+
+    // Manipulando os valores do DOM
+
+    // Manipulando os valores dos inputs
+   
+        // let nome = document.getElementById('nome').value
+        // let inputNome = document.getElementById('nome')
+        // console.log(nome)
+        // inputNome.value = 'Você digitou seu nome'
+        // inputNome.disabled = 'disabled'
+
+        // let inputEmail = document.getElementById('email')
+        // inputEmail.value = nome
+        
+    
+
+    
+
+
+
+
+
+</script>
+
+</html>

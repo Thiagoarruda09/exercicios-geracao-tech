@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //eventos de janela
+        //onresize -> mudança no tamanho da tela
+        function mudouTela(){
+            console.log('a tela mudou de tamanho')
+        }
+        //onscroll->scroll do moure
+        function scroll(){
+            console.log('scrolou meu mano')
+        }
+        //eventos de formulario
+        //onfocus-> quando um campo ganha foco
+        function inputFocu(){
+            console.log("input em focus")
+        }
+        //onblur->quando um campo perde o foco
+        function perdeuFocu(){
+            alert("perdeu o focus meu mano")
+        }
+        //onchange->mudança de valor
+        function mudouValor(){
+            console.log("seu input mudou de valor")
+        }
+
+    </script>
+</head>
+<body onresize="mudouTela()" onscroll="scroll()">
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <input type="text" onfocus="inputFocu()" onblur="perdeuFocu()" onchange="mudouValor()"> 
+    <select name="" id=""  onchange="mudouValor()">
+        <option value="">opção 1</option>
+        <option value="">opção 2</option>
+        <option value="">opção 3</option>
+        <option value="">opção 4</option>
+    </select>
+    
+</body>
+</html>
