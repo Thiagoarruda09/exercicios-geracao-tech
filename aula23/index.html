@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1{
+            border: solid 5px black;
+        }
+        .img2{
+            border: solid 5px red;
+        }
+        .xuxu{
+            border-radius: 30px;
+            margin: 20px;
+            padding: 20px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <form action="">
+        <input type="email" id="email"><br>
+        <input type="password" id="senha"><br>
+        <button onclick="validar()">enviar</button>
+    </form> -->
+    <h3>valor dos inputs-> .value</h3>
+    <h3> conteudo do hmtl de uma tag -> .innerHTML</h3>
+    <h3>conteudo textual do elemento-.textContent></h3>
+    <h3>manipulação de atributos->.setAttributes('atributo','valor')</h3>
+    <h3>Acessar atributos ->.getAttribute('atributo')</h3>
+    <h3>remover atributos -> .removeAttribute</h3>
+    <h2>manipulação de estilo</h2>
+    <h3>modificação de classe</h3>
+    <ul>
+        <li>adicionar .classList.add</li>
+        <li>remover .classList.remove</li>
+        <li>verificar .classList.toggle</li>
+        <li>trocar</li>
+    </ul>
+    <p id="paragrafo1" onclick="verfificarParagrafo()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+        repellendus, voluptate itaque perspiciatis dolor
+        ratione, molestiae, id pariatur soluta doloribus a sit distinctio velit? Nobis eligendi iure nihil voluptatem
+        ipsam!</p>
+    <img src="img/muito-brabo.png"  width="400px" ; id="img" onclick="clicou()" class="">
+    <button onclick="removerAtributo()" id="botão">remover atributo</button>
+    <button id="botão2" onclick="adicionarClasse()">adicionar xuxu</button>
+    <button id="botão3" onclick="removerClasse()"> remover xuxu</button>
+ 
+</body>
+<script>
+    // function validar() {
+    //     let email = document.getElementById("email").value
+    //     let senha = document.getElementById("senha").value
+    //     if (senha == '' || email == '') {
+    //         alert('preencha os campos')
+    //     }
+    // }
+    // function verfificarParagrafo(){
+    //     let paragrafo=document.getElementById('paragrafo1')
+    //     // paragrafo.innerHTML= "<h1> aqui jás um paragrafo</h1>"
+    //     paragrafo.textContent="oooooooba"
+    // }
+    let imagem1 = "img/muito-brabo.png"
+    let imagem2 = "img/img2.png"
+    function clicou() {
+        let img = document.getElementById("img")
+        if (img.getAttribute('src') == imagem1) {
+            img.setAttribute('src', imagem2)
+        } else { img.setAttribute('src', imagem1) }
+    }
+    function removerAtributo() {
+        let img = document.getElementById('img')
+       
+        let botão=document.getElementById('botão')
+       
+        if(img.getAttribute('src')== null){
+            img.setAttribute('src' , imagem1)
+            botão.textContent='remover imagens'
+
+        }
+        else{
+            img.removeAttribute('src')
+            botão.textContent='voltar imagem'
+        }
+    }
+    function adicionarClasse(){
+        let img=document.getElementById('img')
+        img.classList.add('xuxu')
+    }
+    function removerClasse(){
+        let img=document.getElementById('img')
+        img.classList.remove('xuxu')
+    }
+</script>
+
+</html>
