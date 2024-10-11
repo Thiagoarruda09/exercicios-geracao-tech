@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="caixa">
+        <p>texto</p>
+
+    </div>
+    <h1>manipulando a estrutura dos elementos</h1>
+    <div id="lista">
+
+    </div>
+</body>
+<script>
+let caixa=document.getElementById('caixa')
+caixa.style.backgroundColor='red'
+caixa.style.color='white'
+caixa.style.fontSize='15pt'
+caixa.style.display=''
+
+let lista =document.getElementById('lista')
+let paragrafo = document.createElement('p')
+paragrafo.innerHTML='texto 2'
+//adiciona um elemento no final do elemento pai
+lista.appendChild(paragrafo)
+</script>
+</html>
