@@ -1,31 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    <div id="caixa">
-        <p>texto</p>
 
+    <!-- <div id="caixa">
+        <p>Texto</p>
     </div>
-    <h1>manipulando a estrutura dos elementos</h1>
-    <div id="lista">
+    <h1>Manipulação de Estrutura dos elementos</h1>
 
-    </div>
+    <div onclick="adicionarParagrafo()" id="lista" style="width: 150px; height: 300px; border: solid 2px red">
+
+        <img id="aladdin" src="https://i.ytimg.com/vi/j-5E6NsiFb0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDX9QKzd70YSJcc0sU3ARDhXf9ceQ" alt="" width="150px">
+
+        <img id="imgMario" src='https://cdn.awsli.com.br/2614/2614028/produto/246277362/super-mario-world_br_a3-9lit9cwq9r.jpg' alt="" width="150px">
+
+        
+        
+    </div> -->
+    <form action="">
+        <input type="text" id="modelo" placeholder="Qual o modelo do seu carro?"><br>
+        <input type="text" id="portas" placeholder="quantas portas tem seu carro?"> <br>
+        <input type="text" id="cor" placeholder="qual a cor do seu carro?"> <br>
+        <input type="text" id="imagem" placeholder="coloque a URL de uma imagem do seu carro"> <br>
+        <button type="button" onclick="cadastrar()">Cadastrar</button>
+     
+
+    </form>
+<div id="campoBusca">
+    <h1>buscar o carro</h1>
+        <input type="text" id="modeloBuscado">
+        <button type="button" onclick="buscar()">buscar</button>
+    
+</div>
+    
 </body>
 <script>
-let caixa=document.getElementById('caixa')
-caixa.style.backgroundColor='red'
-caixa.style.color='white'
-caixa.style.fontSize='15pt'
-caixa.style.display=''
+    let cadastro=[]
+    function cadastrar(){
+        let modelo=document.getElementById('modelo').value
 
-let lista =document.getElementById('lista')
-let paragrafo = document.createElement('p')
-paragrafo.innerHTML='texto 2'
-//adiciona um elemento no final do elemento pai
-lista.appendChild(paragrafo)
+        let portas=document.getElementById('portas').value
+        let cor=document.getElementById('cor').value
+        let imagem=document.getElementById('imagem').value
+
+        let carro={
+            modelo: modelo,
+            portas:portas,
+            cor:cor,
+            imagem:imagem
+        }
+        cadastro.push(carro)
+        console.log(cadastro)
+
+       
+ 
+    }
+    function buscar(){
+        let busca=document.getElementById('modeloBuscado').value
+        busca=parseInt(busca)
+       let carroBuscado=cadastro[busca]
+
+        let titulo=document.createElement('h1')
+        titulo.innerHTML= carroBuscado.modelo
+
+        let divResultado=document.getElementById('campoBusca')
+        divResultado.appendChild(titulo)
+    }
+    // let modeloCarro=document.getElementById('modelo')
+    // modeloCarro.style.backgroundColor='red'
+
+    // function mostrar(){
+    //     let modelo2=document.getElementById('modelo2')
+    //     modelo2.value(cadastro[0].modelo)
+    // }
+
+    // let caixa = document.getElementById('caixa')
+    // console.log(caixa)
+    // caixa.style.backgroundColor = 'red'
+    // caixa.style.color = 'white'
+    // caixa.style.fontSize = '15pt'
+    // caixa.style.fontFamily = 'Arial'
+    // caixa.style.display = 'none'
+    // caixa.style.display = 'block'
+    // function adicionarParagrafo(){
+    //     let lista = document.getElementById('lista')
+    //     let imagem = document.createElement('img')
+    //     imagem.setAttribute('src','https://s2-techtudo.glbimg.com/xTAzyy52W2Ek9zd2jubQsr7PR3g=/0x0:695x505/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/A/B/pipNqqRKutA7AWqA3prA/2014-09-29-megama-x-capa.jpg')
+    //     imagem.style.width = '150px'
+        //Adiciona um elemento no final do elemento pai
+        //lista.appendChild(imagem)
+        
+        //Adiciona um elemento antes de outro (lista.firstChild)
+        // let imgMario = document.getElementById('imgMario')
+        // lista.insertBefore(imagem,imgMario)
+
+        // Remover um elemento
+        //lista.removeChild(imgMario)
+
+        // Substituir um elemento
+        // .replaceChild(novo,anterior)
+        //lista.replaceChild(imagem,document.getElementById('aladdin'))
+
+
+    // }
+
+    // Objetos
+    // atributo -> porta, cor, modelo
+    // métodos -> acelerar, frear
+
+    // let carros = [{
+    //     porta: 4,
+    //     cor: 'preto',
+    //     modelo: 'Impala 67',
+    //     imagem:'https://www.webmotors.com.br/wp-content/uploads/2020/10/13230616/Impala-de-Dean-%C3%A9-impec%C3%A1vel.jpg',
+    //     acelerar: function(){
+    //         alert('Acelerando')
+    //     },
+    //     frear: function(){
+    //         alert('freando')
+    //     }
+    // },{
+    //     porta: 4,
+    //     cor: 'vermelho',
+    //     modelo: 'maverick',
+    //     imagem:'https://www.performancev8.com/wp-content/uploads/2017/07/maverick-vermelho-performancev8-5.jpg',
+    //     acelerar: function(){
+    //         alert('Acelerando')
+    //     },
+    //     frear: function(){
+    //         alert('freando')
+    //     }
+
+    // }] 
+
+    // console.log(carros[0].porta)
+    // console.log(carros[0].modelo)
+    // console.log(carros[0].imagem)
+
+    // carros[0].acelerar()
+    
+
+
+
+
+
+
 </script>
 </html>
