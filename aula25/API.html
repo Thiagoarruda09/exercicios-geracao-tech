@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIs</title>
+
+    <script>
+      function buscarCEP() {
+        let cepDigitado = document.getElementById("cep").value;
+        console.log(cepDigitado);
+        fetch(`https://viacep.com.br/ws/${cepDigitado}/json/`)
+          .then((resposta) => resposta.json())
+          .then((cep) => {
+            document.getElementById("bairro").value = cep.bairro;
+            document.getElementById("complemento").value = cep.complemento;
+            document.getElementById("estado").value = cep.estado;
+            document.getElementById("localidade").value = cep.localidade;
+            document.getElementById("logradouro").value = cep.logradouro;
+            document.getElementById("regiao").value = cep.regiao;
+          })
+          .catch((erro) => {
+            //Seu código vai aqui!!!
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <input id="cep" type="text" placeholder="Digite seu CEP" />
+      <button onclick="buscarCEP()" type="button">Enviar</button>
+
+      <input id="bairro" type="text" disabled="disabled" /><br />
+      <input id="complemento" type="text" disabled="disabled" /><br />
+      <input id="estado" type="text" disabled="disabled" /><br />
+      <input id="localidade" type="text" disabled="disabled" /><br />
+      <input id="logradouro" type="text" disabled="disabled" /><br />
+      <input id="regiao" type="text" disabled="disabled" /><br />
+    </form>
+  </body>
+</html>
+

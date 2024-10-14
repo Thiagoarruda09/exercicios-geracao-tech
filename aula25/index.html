@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        // forEach() - Percorre um array com uma arrow function
+        let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let dobro = [];
+        let pessoas = [
+            {
+                nome: "João",
+                idade: 28,
+                proficao: "Dev",
+            },
+            {
+                nome: "Maria",
+                idade: 22,
+                proficao: "Analista",
+            },
+            {
+                nome: "Ana",
+                idade: 18,
+                proficao: "Design",
+            },
+            {
+                nome: "Icaro",
+                idade: 22,
+                proficao: "Filho do dono",
+            },
+            {
+                nome: "enzo",
+                idade: 12,
+                proficao: "estudante",
+            },
+            {
+                nome: "lorenzo",
+                idade: 15,
+                proficao: "estudante",
+            },
+            {
+                nome: "pedro",
+                idade: 23,
+                proficao: "Dev",
+            },
+            {
+                nome: "pedrin",
+                idade: 21,
+                proficao: "Dev",
+            },
+        ];
+
+        numeros.forEach((numero) => {
+            dobro.push(numero * 2);
+        });
+        console.log(dobro);
+
+        pessoas.forEach((pessoa) => {
+            console.log(pessoa.nome);
+        });
+
+        for (let i = 0; i < pessoas.length; i++) {
+            console.log(pessoas[i].nome);
+        }
+
+        // Map() - Cria um novo array com os resultados da função aplicada a cada elemento do array inicial.
+
+        let somaUm = numeros.map((numero) => {
+            return numero + 1;
+        });
+        console.log(numeros);
+        console.log(somaUm);
+
+        let profissoes = pessoas.map((pessoa) => {
+            return pessoa.proficao;
+        });
+        console.log(profissoes);
+
+        let nomeIdade = pessoas.map((pessoa) => {
+            return {
+                nome: pessoa.nome,
+                idade: pessoa.idade,
+            };
+        });
+        console.log(pessoas);
+        console.log(nomeIdade);
+        //filter() cria um novo array com os elementos que passarem em um teste(filtro) 
+
+        let menores = pessoas.filter((pessoa) => {
+            return pessoa.idade < 18;
+        }
+
+        )
+        console.log(menores)
+
+        let dev = pessoas.filter((pessoa) => {
+            return pessoa.proficao == "Dev"
+        }
+
+        )
+        console.log(dev)
+        //reduce() - Aplica uma função acumuladora em todos os elementos de um array, resultando em um único valor:
+
+      let folhaPagamento = pessoas.reduce((acumulador, pessoa) => {
+        return acumulador + pessoa.salario;
+      }, 0);
+
+      console.log(numeros.includes(5));
+      console.log(numeros.includes(11));
+
+      console.log(numeros.indexOf(10));
+      console.log(numeros.indexOf(11));
+
+      console.log(folhaPagamento);
+
+    </script>
+</head>
+
+<body></body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Você vai criar uma página web que exibe informações sobre uma lista de carros. Cada carro é representado por um objeto no seguinte array:
+
+let carros = [
+    { modelo: 'Fusca', preco: 15000, ano: 1972 },
+    { modelo: 'Civic', preco: 80000, ano: 2020 },
+    { modelo: 'Fiesta', preco: 45000, ano: 2015 },
+    { modelo: 'Camaro', preco: 300000, ano: 2021 },
+    { modelo: 'Gol', preco: 30000, ano: 2010 },
+    { modelo: 'Corolla', preco: 70000, ano: 2019 }
+];
+
+Crie uma interface HTML com os seguintes botões:
+
+"Listar Carros"
+"Mostrar Modelos"
+"Filtrar Carros Caros"
+"Calcular Preço Total"
+Utilizando JavaScript, implemente a lógica para cada botão:
+
+Listar Carros: Quando o botão for clicado, deve usar forEach() para imprimir no console uma mensagem para cada carro, informando seu modelo e preço. Exemplo: "O carro Fusca custa R$15000."
+
+Mostrar Modelos: Quando clicado, deve usar map() para criar um array que contém apenas os modelos dos carros e exibi-los em uma lista na página.
+
+Filtrar Carros Caros: Ao clicar, deve usar filter() para criar um novo array contendo apenas os carros com preço acima de R$50.000 e exibir esses carros em uma lista na página.
+
+Calcular Preço Total: Ao ser clicado, deve usar reduce() para calcular o preço total de todos os carros e exibir o resultado na página. -->
+
+
+</head>
+
+<body>
+    <h1>Lista de Carros</h1>
+    <button id="listarCarros" onclick="listarCarros ()">Listar Carros</button>
+    <button id="mostrarModelos" onclick="mostrarCarros ()">Mostrar Modelos</button>
+    <button id="filtrarCarros" onclick="filtrarCarros ()">Filtrar Carros Caros</button>
+    <button id="calcularPrecoTotal" onclick="calculaPreço ()">Calcular Preço Total</button>
+
+    <ul id="resultado"></ul>
+
+
+</body>
+<script>
+    let carros = [
+        { modelo: 'Fusca', preco: 15000, ano: 1972 },
+        { modelo: 'Civic', preco: 80000, ano: 2020 },
+        { modelo: 'Fiesta', preco: 45000, ano: 2015 },
+        { modelo: 'Camaro', preco: 300000, ano: 2021 },
+        { modelo: 'Gol', preco: 30000, ano: 2010 },
+        { modelo: 'Corolla', preco: 70000, ano: 2019 }
+    ];
+    function listarCarros() {
+        let listaDeCarros = document.getElementById('resultado')
+        carros.forEach((carro) => {
+            console.log(carro.modelo)
+        })
+    }
+    function mostrarCarros() {
+        let modelos = carros.map(
+            modelo => {
+                return modelo.modelo
+            }
+        )
+
+        let mostrarCarros = document.getElementById('resultado')
+
+
+        modelos.forEach((itens) => {
+            let item = document.createElement('li');
+            item.innerHTML = 'o modelo do seu carro é ' + itens
+            mostrarCarros.appendChild(item)
+
+        })
+
+
+    }
+</script>
+
+</html>
