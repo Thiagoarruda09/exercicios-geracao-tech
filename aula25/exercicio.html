@@ -80,6 +80,22 @@ Calcular Preço Total: Ao ser clicado, deve usar reduce() para calcular o preço
 
 
     }
+    function filtrarCarros(){
+        let CarrosCaro=carros.filter((carro)=>{
+            return carro.preco >=50000
+        })
+
+        let filtrarCarros=document.getElementById('resultado')
+
+        CarrosCaro.forEach((carrosC)=>{
+            let carro=document.createElement('li');
+            carro.innerHTML= 'os carros acima de 50000 são:'+ carrosC.modelo +' e custam:'+carrosC.preco
+            filtrarCarros.appendChild(carro)
+        })
+
+    }
+
+
 </script>
 
 </html>
