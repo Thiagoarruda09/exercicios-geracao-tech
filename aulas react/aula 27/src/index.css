@@ -1,0 +1,13 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightgray;
+}
+h1{
+  color: blueviolet;
+}
+
+.paragrafo1{
+  background-color: brown;
+  color: bisque;
+}
+p{color: red;}
