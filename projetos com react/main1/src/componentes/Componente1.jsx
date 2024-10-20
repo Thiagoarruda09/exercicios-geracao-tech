@@ -1,3 +1,4 @@
+import'./Componente1.css'
 function Componente1 (){
     return(
         <>
@@ -7,7 +8,7 @@ function Componente1 (){
                     <div className="row d-flex flex-row">
                         <div className="col">
                             <h3 className="bg-warning rounded">30%off</h3>
-                            <h2>novo drop supreme</h2>
+                            <h2 className='teste'>novo drop supreme</h2>
                             <button className="btn btn-light">comprar</button>
                         </div>
                         <div className="col">

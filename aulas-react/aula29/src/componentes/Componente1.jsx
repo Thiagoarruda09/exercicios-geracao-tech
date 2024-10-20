@@ -24,6 +24,7 @@ function Componente1({ cor, estilo, esp }) {
         repudiandae, libero numquam amet, tenetur sit ad vel beatae minus labore
         laborum laboriosam, id aliquid distinctio debitis dicta cumque? In, ad?
       </p>
+      <p className="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, soluta.</p>
       <button onClick={alterarBordas}>Alterar bordas</button>
     </>
   );
