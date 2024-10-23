@@ -20,6 +20,7 @@ function App() {
       <img src={edduard} alt=""  width={'200px'}/> */}
 
       <h1>hooks</h1>
+      
       <Comp1/>
       
     </>
