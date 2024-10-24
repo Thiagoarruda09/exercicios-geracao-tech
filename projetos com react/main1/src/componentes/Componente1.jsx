@@ -3,11 +3,11 @@ function Componente1 (){
     return(
         <>
         <div className="container mt-5">
-            <div className="row gap-1 d-flex flex-row">
+            <div className="row gap-2 d-flex flex-row">
                 <div className="col  fundoCard pt-5 pb-3  rounded-2">
                     <div className="row d-flex flex-row">
                         <div className="col">
-                            <h6 className="  desconto">30%off</h6>
+                            <h6 className="  desconto fs-6">30%off</h6>
                             <h3 className='teste'>novo drop supreme</h3>
                             <button className="btn btn-light corFonteBotaoComp1">comprar</button>
                         </div>
@@ -19,7 +19,7 @@ function Componente1 (){
                 <div className="col  fundoCard pt-5 pb-3  rounded-2">
                     <div className="row d-flex flex-row">
                         <div className="col">
-                            <h6 className="  desconto">30%off</h6>
+                            <h6 className="  desconto fs-6">30%off</h6>
                             <h3>novo drop supreme</h3>
                             <button className="btn btn-light corFonteBotaoComp1">comprar</button>
                         </div>
@@ -31,7 +31,7 @@ function Componente1 (){
                 <div className="col  fundoCard pt-5  pb-3 rounded-2">
                     <div className="row d-flex flex-row">
                         <div className="col">
-                            <h6 className="  desconto">30%off</h6>
+                            <h6 className="  desconto fs-6">30%off</h6>
                             <h3>novo drop supreme</h3>
                             <button className="btn btn-light corFonteBotaoComp1">comprar</button>
                         </div>

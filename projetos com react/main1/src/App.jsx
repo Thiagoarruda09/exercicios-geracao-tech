@@ -13,7 +13,7 @@ function App() {
       <div className="container-fluid corDeFundoBranco">
         <div className="row d-flex flex-row">
           <div className="col col-4 offset-1 align-self-center">
-            <h3 className="text-warning">Melhores ofertas personalizadas</h3>
+            <p className="text-warning"><b>Melhores ofertas personalizadas</b></p>
             <h1 >Queima de stoque Nike 🔥</h1>
             <p >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quo
