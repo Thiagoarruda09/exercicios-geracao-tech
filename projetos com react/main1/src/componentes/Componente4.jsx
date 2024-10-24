@@ -2,7 +2,7 @@ import './Componente4.css'
 function Componente4() {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid corDeFundoComp4">
         <div className="row  d-flex flex-row">
           <div className="col col-6 gradiente">
             <img src="sapato4.png" alt="" width={"500px"} />
