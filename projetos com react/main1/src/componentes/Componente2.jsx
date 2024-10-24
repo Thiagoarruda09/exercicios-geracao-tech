@@ -1,29 +1,31 @@
+import './Componente2.css'
 function Componente2() {
 
     return (
         <>
-            <h1>coleções em destaque</h1>
-            <div className="container">
-                <div className="row d-flex flex-row">
+           
+            <div className="container ">
+            <h3 className='text-center mb-5'>coleções em destaque</h3>
+                <div className="row d-flex gap-1 flex-row justify-content-center">
                     <div className="col col-2">
-                        <img src="icone1.png" alt="" width={'100px'} />
-                        <h4>camisetas</h4>
+                        <div className='icone'><img src="icone1.png" className='icone' alt="" width={'60px'} /></div>
+                        <h6>camisetas</h6>
                     </div>
                     <div className="col col-2">
-                        <img src="icone2.png" alt="" width={'100px'} />
-                        <h4>calças</h4>
+                        <div className='icone'><img src="icone2.png" className='icone' alt="" width={'60px'} /></div>
+                        <h6>calças</h6>
                     </div>
                     <div className="col col-2">
-                        <img src="icone3.png" alt="" width={'100px'} />
-                        <h4>bonés</h4>
+                        <div className='icone'><img src="icone3.png" className='icone' alt="" width={'60px'} /></div>
+                        <h6>bonés</h6>
                     </div>
                     <div className="col col-2">
-                        <img src="icone4.png" alt="" width={'100px'} />
-                        <h4>headphones</h4>
+                        <div className='icone'><img src="icone4.png" className='icone' alt="" width={'60px'} /></div>
+                        <h6>headphones</h6>
                     </div>
                     <div className="col col-2">
-                        <img src="icone5.png" alt="" width={'100px'} />
-                        <h4>tênis</h4>
+                        <div className='icone'><img src="icone5.png" className='icone' alt="" width={'60px'} /></div>
+                        <h6>tênis</h6>
                     </div>
 
                 </div>
