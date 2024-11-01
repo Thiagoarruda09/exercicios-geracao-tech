@@ -142,7 +142,7 @@ function login(email, senha) {
 }
 
 function produtos(token) {
-  const jstVerify = (tokenUser) => {
+  const jwtVerify = (tokenUser) => {
     try {
       const decoded = jwt.verify(tokenUser, "sudgsajkcsiuchsck");
       const data = [
@@ -159,11 +159,12 @@ function produtos(token) {
           preço: 500,
         },
       ];
-      return decoded;
-
       if (tokenUser == token) {
         console.log(data);
       }
+      return decoded;
+
+   
     } catch (error) {
       console.log(`Deu ruim! ${error}`);
     }
