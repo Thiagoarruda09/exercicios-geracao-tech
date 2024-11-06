@@ -5,7 +5,16 @@ const express = require("express");
 const app = express();
 
 // // permite que o servidor entenda json no corpo das requisições
-// app.use(express.json())
+app.use(express.json());
+
+const login = require("./routes/RouterLogin");
+app.use("/login", login);
+
+const Produtos = require("./routes/RouterProduct");
+app.use("/Produtos", Produtos );
+
+const Users=require('./routes/RouterUsers')
+app.use("/Users", Users)
 
 // // criando uma rota para a api
 // app.get('/home',  (req, res)=> {
@@ -38,101 +47,99 @@ const app = express();
 //         "profissao":"desenvolvedor"
 //     }],)
 //   })
-app.get("/produtos", (req, res) => {
-  const produtos = req.query.produtos;
-  res.send([
-    {
-      name: "sapato nike",
-      price: 300,
-      image: "sapato3.png",
-    },
-    {
-      name: "sapato nike2",
-      price: 400,
-      image: "sapato3.png",
-    },
-    {
-      name: "sapato nike3",
-      price: 500,
-      image: "sapato3.png",
-    },
-    {
-      name: "sapato nike4",
-      price: 600,
-      image: "sapato3.png",
-    },
-    {
-      name: "sapato nike5",
-      price: 700,
-      image: "sapato3.png",
-    },
-    {
-      name: "sapato nike6",
-      price: 800,
-      image: "sapato3.png",
-    },
-    {
-      name: "sapato nike7",
-      price: 900,
-      image: "sapato3.png",
-    },
-    {
-      name: "sapato nike8",
-      price: 1000,
-      image: "sapato3.png",
-    },
-  ]);
-});
+// app.get("/produtos", (req, res) => {
 
-app.get("/login", (req, res) => {
-  console.log('qualquer coisa')
-  const email = req.query.email;
-  const senha = req.query.senha;
-  const UserEmail = "thiago.arruda.09@hotmail.com";
-  const UserSenha = "thiago123";
+//   res.send([
+//     {
+//       name: "sapato nike",
+//       price: 300,
+//       image: "sapato3.png",
+//     },
+//     {
+//       name: "sapato nike2",
+//       price: 400,
+//       image: "sapato3.png",
+//     },
+//     {
+//       name: "sapato nike3",
+//       price: 500,
+//       image: "sapato3.png",
+//     },
+//     {
+//       name: "sapato nike4",
+//       price: 600,
+//       image: "sapato3.png",
+//     },
+//     {
+//       name: "sapato nike5",
+//       price: 700,
+//       image: "sapato3.png",
+//     },
+//     {
+//       name: "sapato nike6",
+//       price: 800,
+//       image: "sapato3.png",
+//     },
+//     {
+//       name: "sapato nike7",
+//       price: 900,
+//       image: "sapato3.png",
+//     },
+//     {
+//       name: "sapato nike8",
+//       price: 1000,
+//       image: "sapato3.png",
+//     },
+//   ]);
+// });
 
-  const Login = (email, senha) => {
-    if (email === UserEmail && senha === UserSenha) {
-      const jwt = require("jsonwebtoken");
-      const token = jwt.sign({ id: 1, nome: "thiago" }, "asuhaoksajdiashdnjk");
-      res.send({
-        sucess: true,
-        token: token,
-        error: "",
-      });
-    } else {
-      res.send([]);
-    }
-  };
-});
+// app.get("/login", (req, res) => {
+//   console.log('qualquer coisa')
+//   const email = req.query.email;
+//   const senha = req.query.senha;
+//   const UserEmail = "thiago.arruda.09@hotmail.com";
+//   const UserSenha = "thiago123";
 
-app.get("/Controle", (req, res) => {
-  const produtos = (token) => {
-    const jwt = require("jsonwebtoken");
+//   const Login = (email, senha) => {
+//     if (email === UserEmail && senha === UserSenha) {
+//       const jwt = require("jsonwebtoken");
+//       const token = jwt.sign({ id: 1, nome: "thiago" }, "asuhaoksajdiashdnjk");
+//       res.send({
+//         sucess: true,
+//         token: token,
+//         error: "",
+//       });
+//     } else {
+//       res.send([]);
+//     }
+//   };
+// });
 
-    const decoded = jwt.verify(token, "asuhaoksajdiashdnjk");
-    const data = [
-      {
-        nome: "sapato nike1",
-        preço: 300,
-      },
-      {
-        nome: "sapato nike2",
-        preço: 400,
-      },
-      {
-        nome: "sapato nike3",
-        preço: 500,
-      },
-    ];
-    if (decoded) {
-      return data;
-    }
-    return decoded;
-  };
-});
+// app.get("/Controle", (req, res) => {
+//   const produtos = (token) => {
+//     const jwt = require("jsonwebtoken");
 
-
+//     const decoded = jwt.verify(token, "asuhaoksajdiashdnjk");
+//     const data = [
+//       {
+//         nome: "sapato nike1",
+//         preço: 300,
+//       },
+//       {
+//         nome: "sapato nike2",
+//         preço: 400,
+//       },
+//       {
+//         nome: "sapato nike3",
+//         preço: 500,
+//       },
+//     ];
+//     if (decoded) {
+//       return data;
+//     }
+//     return decoded;
+//   };
+// });
 
 // function login(email, senha) {
 //   const UserEmail = "thiago.arruda.09@hotmail.comsdasd";
@@ -148,8 +155,10 @@ app.get("/Controle", (req, res) => {
 // }
 // // subindo o servidor para a porta 3000
 
-const PORT =3000
-app.listen(PORT, ()=> {console.log(`o servidor está rodando na porta ${PORT}`)})
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`o servidor está rodando na porta ${PORT}`);
+});
 
 // function login(email, senha){
 
