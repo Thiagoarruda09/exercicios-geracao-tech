@@ -1,23 +1,24 @@
 const connection=require('../config/database/connection')
 const {DataTypes}=require('sequelize')
 
-let UserModel=connection.define('Users',{
-    FirstName:{
+let ProductModel=connection.define('Products',{
+    nome:{
         type:DataTypes.STRING(50),
         allowNull:false
     },
-    Surname:{
+    preco:{
+        type:DataTypes.DECIMAL(10,2),
+        allowNull:false
+    },
+    marca:{
         type:DataTypes.STRING(50),
         allowNull:false
     },
-    Email:{
-        type:DataTypes.STRING(50),
+    estoque:{
+        type:DataTypes.INTEGER(10),
         allowNull:false
-    },
-    Password:{
-        type:DataTypes.STRING(),
-        allowNull:false
-    }
-})
 
-module.exports=UserModel
+    }
+
+})
+module.exports=ProductModel

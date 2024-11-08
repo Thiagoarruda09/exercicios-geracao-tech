@@ -1,13 +1,20 @@
+const UserModel=require('../models/UserModel')
 const Login = async (req, res, next) => {
   try {
-    console.log(req.body);
+  
     const email = req.body.email;
     const senha = req.body.senha;
 
-    const UserEmail = "thiago.arruda.09@hotmail.com";
-    const UserSenha = "thiago123";
+   
+    const User=await UserModel.findOne({
+      where:{email}
+    })
+    const bcrypt= require('bcrypt')
+    const userPassword=User ? User.Password:''
+    const hastValid= await bcrypt.compare(senha, userPassword)
 
-    if (email == UserEmail && senha == UserSenha) {
+ 
+    if (hastValid) {
       const jwt = require("jsonwebtoken");
       const token = jwt.sign({ id: 1, nome: "thiago" }, "hsdkjadnnosaidhh");
 

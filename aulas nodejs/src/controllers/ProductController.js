@@ -1,32 +1,8 @@
+const ProductModel=require('../models/ProductModel')
 const ProductList=async(req,res,next)=>{
     try{
-        res.send([
-            {
-                nome:'sapato1',
-                preco:300,
-                marca:'nike',
-                estoque:2
-            },
-            {
-                nome:'sapato2',
-                preco:300,
-                marca:'nike',
-                estoque:2
-            },
-            {
-                nome:'sapato3',
-                preco:300,
-                marca:'nike',
-                estoque:2
-            },
-            {
-                nome:'sapato4',
-                preco:300,
-                marca:'nike',
-                estoque:2
-            }
-
-        ])
+        const Products= await ProductModel.findAll();
+        res.send(Products)
 
     }catch(error){
         res.send({
@@ -45,9 +21,16 @@ const ProductRegister=async(req,res,next)=>{
       const marca=req.body.marca 
       const estoque=req.body.estoque
 
+      const Product=await ProductModel.create({
+        nome:nome,
+        preco:preco,
+        marca:marca,
+        estoque:estoque
+      })
+
       res.send({
         'success':true,
-        'message':'produto cadastrado com sucesso'
+        'message':`Produto cadastrado ${Product.nome}`
       })
       
       

@@ -1,63 +1,47 @@
-const UsersList=async(req,res,next)=>{
-    try{
-        res.send([{
-            nome:'thiago',
-            id:1,
-            email:'thiago.arruda.09@hotmail.com',
-            senha:'thiago123'
-        },
-        {
-            nome:'kleber',
-            id:2,
-            email:'kleber.klebudo.09@hotmail.com',
-            senha:'kleber123'
-        },
-        {
-            nome:'icaro',
-            id:3,
-            email:'icaro.cababom.09@hotmail.com',
-            senha:'icaro123'
-        },
-        {
-            nome:'mateus',
-            id:4,
-            email:'mateus.sumido.09@hotmail.com',
-            senha:'mateus123'
-        },])
+const UserModel = require("../models/UserModel");
 
+const UsersList = async (req, res, next) => {
+  try {
+    const Users = await UserModel.findAll();
+    res.send(Users);
+  } catch (error) {
+    res.send({
+      success: false,
+      error: `erro na requisicao ${error}`,
+    });
+  }
+};
 
-    }catch(error){
-        res.send({
-            'success':false,
-            'error':`erro na requisicao ${error}`
-        })
+const UsersCreate = async (req, res, next) => {
+  try {
+    const bcrypt=require('bcrypt')
 
-    }
-}
+    const FirstName = req.body.FirstName;
+    const Surname = req.body.Surname;
+    const Email = req.body.Email;
+    const Password = req.body.Password;
 
-const UsersCreate=async(req,res,next)=>{
+    const saltRound=10
 
-    const nome=req.body.nome
+    const hash=await bcrypt.hash(Password, saltRound)
 
-    const email=req.body.email
-    const senha=req.body.senha
+    const Users = await UserModel.create({
+      FirstName: FirstName,
+      Surname: Surname,
+      Email: Email,
+      Password: hash,
+    });
 
+    res.send({
+      success: true,
+      message: `usuario cadastrado com sucesso ${Users.id - Users.FirstName}`,
+    });
+  } catch (error) {
+    res.send({
+      success: false,
+      error: `erro na requisiçao ${error}`,
+    });
+  }
+};
 
-    try{
-        res.send({
-            'sucess':true,
-            'message':'usuario criado com sucesso'
-        })
-
-    }catch(error){
-        res.send({
-            'success':false,
-            'error':`erro na requisiçao ${error}`
-
-        })
-    }
-
-    console.log(req.body.senha)
-}
-
-module.exports={UsersList,UsersCreate}
+module.exports = { UsersList, UsersCreate };

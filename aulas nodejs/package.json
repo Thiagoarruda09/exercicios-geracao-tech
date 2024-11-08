@@ -5,13 +5,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js",
-     "db": "node src/config/sync.js"
+    "db": "node src/config/sync.js"
   },
   "keywords": [],
   "author": "Thiago",
   "license": "ISC",
   "description": "aulas-node-js",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
