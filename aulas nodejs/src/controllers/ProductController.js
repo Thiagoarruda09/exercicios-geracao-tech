@@ -1,6 +1,7 @@
 const ProductModel=require('../models/ProductModel')
 const ProductList=async(req,res,next)=>{
     try{
+        const id=req.params.id
         const Products= await ProductModel.findAll();
         res.send(Products)
 
@@ -41,8 +42,72 @@ const ProductRegister=async(req,res,next)=>{
         })
     }
 }
+const ProductUpdate= async(req,res,next)=>{
+    try{
+      const id=req.params.id
+      const idValid= await ProductModel.findOne({where:{id:id}})
+  
+  
+  
+      if(idValid){
+       
+        const produto=await ProductModel.update(req.body,{
+          where:{id}
+        })
+        res.send({
+        'sucess':true,
+        'message': `produto alterado com sucesso" id: ${produto.id - produto.nome}`
+        })
+      }else{
+        res.send({
+          'sucess':true,
+          'message': "usuario nao encontrado"
+        })
+      }
+  
+  
+    }catch(error){
+      res.send({
+        'sucess':false,
+        'error': `erro na requisição ${error}`
+      })
+    }
+  }
 
-module.exports={ProductList, ProductRegister}
+  const ProductDelete=async(req,res,next)=>{
+
+
+    try{
+      const id=req.params.id
+      const idValid= await ProductModel.findOne({where:{id:id}})
+      
+      if(idValid){
+        
+      const produto = await ProductModel.destroy({
+        where:{id}
+      })
+      res.send({
+        success:true,
+        message:`produto deletado com sucesso ${produto.id - produto.nome}`
+      }) 
+    }else{
+      res.send({
+        success:'false',
+        message:"produto nao encontrado"
+      })
+    }
+    
+    
+    
+    }catch(error){
+      res.send({
+        success:false,
+        error:`erro na requisição ${error}`
+      })
+    }
+    }
+
+module.exports={ProductList, ProductRegister,ProductDelete,ProductUpdate}
 
 
 

@@ -16,6 +16,9 @@ app.use("/Produtos", Produtos );
 const Users=require('./routes/RouterUsers')
 app.use("/Users", Users)
 
+const Category=require('./routes/RouterCategory')
+app.use('/Category', Category)
+
 // // criando uma rota para a api
 // app.get('/home',  (req, res)=> {
 //   res.send('Hello World')
